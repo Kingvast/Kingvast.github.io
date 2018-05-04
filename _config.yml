@@ -54,8 +54,8 @@ kramdown:
 
 
 
-#Disqus（https://disqus.com/）
-#disqus_username: kingvast
+Disqus（https://disqus.com/）
+disqus_username: kingvast
 
 # Gitalk
 gitalk:
