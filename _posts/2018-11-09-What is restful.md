@@ -38,6 +38,7 @@ RESTful架构应该遵循统一接口原则，统一接口包含了一组受限�
 如果按照HTTP方法的语义来暴露资源，那么接口将会拥有安全性和幂等性的特性，例如GET和HEAD请求都是安全的， 无论请求多少次，都不会改变服务器状态。而GET、HEAD、PUT和DELETE请求都是幂等的，无论对资源操作多少次， 结果总是一样的，后面的请求并不会产生比第一次更多的影响。
 
 下面列出了GET，DELETE，PUT和POST的典型用法:
+
 #### GET
 - 安全且幂等
 - 获取表示
@@ -52,6 +53,7 @@ RESTful架构应该遵循统一接口原则，统一接口包含了一组受限�
 - 406 （not acceptable）- 服务端不支持所需表示
 - 500 （internal server error）- 通用错误响应
 - 503 （Service Unavailable）- 服务端当前无法处理请求
+
 #### POST
 - 不安全且不幂等
 - 使用服务端管理的（自动产生）的实例号创建资源
@@ -71,6 +73,7 @@ RESTful架构应该遵循统一接口原则，统一接口包含了一组受限�
 - 415 （unsupported media type）- 接受到的表示不受支持
 - 500 （internal server error）- 通用错误响应
 - 503 （Service Unavailable）- 服务当前无法处理请求
+
 #### PUT
 - 不安全但幂等
 - 用客户端管理的实例号创建一个资源
@@ -88,6 +91,7 @@ RESTful架构应该遵循统一接口原则，统一接口包含了一组受限�
 - 415 （unsupported media type）- 接受到的表示不受支持
 - 500 （internal server error）- 通用错误响应
 - 503 （Service Unavailable）- 服务当前无法处理请求
+
 #### DELETE
 - 不安全但幂等
 - 删除资源
